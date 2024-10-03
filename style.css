@@ -1,0 +1,218 @@
+/* Favorite Font. */
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Auto Dark Mode pretty much. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #fff;
+        --bg: #1f1f1f;
+        --hrcolor: #fff;
+        --common: lightgreen;
+        --epic: #5e87c9;
+        --legendary: #ca9849;
+        --upgraded: lightblue;
+        --ascended: #df5452;
+        --adminobtain: #d15796;
+        --adminunobtain: #a74176;
+    }
+    a {
+        color: #bbb;
+    }
+    a:hover {
+        color: #bcccff
+    }
+    button, input[type=button], input[type=reset], input[type=submit] {
+        background-color: white;
+    }
+    button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+        background-color: #383838;
+        color: white;
+    }
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+    input[type=text]:focus {
+        background-color: #181818;
+    }
+    select {
+        background-color: #fff;
+        color: black;
+    }
+    textarea {
+        border: none;
+        background-color: #181818;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --hrcolor: black;
+    }
+    table {
+        border: black 2px solid;
+    }
+    a {
+        color: #383838;
+    }
+    a:hover {
+        color: #bcccff
+    }
+    button, input[type=button], input[type=reset], input[type=submit] {
+        background-color: #383838;
+        color: white;
+    }
+    button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+        background-color: #bbb;
+    }
+    input[type=text] {
+        border: none;
+        border-bottom: 2px solid black;
+        color: black;
+    }
+    input[type=text]:focus {
+        background-color: #e2e2e2;
+    }
+    select {
+        background-color: #383838;
+        color: white;
+    }
+    textarea {
+        border: none;
+        background-color: #bbb;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-size: 120%;
+}
+
+h1 {
+    text-decoration-line: underline;
+    text-align: center
+}
+h2 {
+    text-align: center
+}
+
+img {
+    align-items: center;
+}
+
+.center {
+    margin: auto;
+    max-width: 90%;
+    width: auto;
+}
+
+@media (max-width: 640px) {
+    .center {max-width: 75%}
+}
+@media (max-width: 420px) {
+    .center {max-width: 85%}
+}
+
+table {
+    border: #fff 2px solid;
+    padding: 8px;
+    margin-top: 24px;
+}
+
+th {
+    padding-right: 24px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.solid {
+    box-sizing: border-box;
+    border: none;
+    border-top: 3px solid var(--hrcolor);
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+    border: none;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    padding: 4px 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+    transition: .2s ease;
+}
+
+input[type=text] {
+    font-family: "Inter", sans-serif;
+    padding: 4px 6px;
+    background-color: transparent;
+    transition: .2s ease;
+}
+input[type=text]:focus {
+    outline: none;
+    transition: .2s ease;
+}
+
+textarea {
+    resize: none;
+    font-family: "Inter", sans-serif;
+}
+textarea:focus {
+    outline: none;
+}
+
+select {
+    font-family: "Inter", sans-serif;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+select:focus {
+    outline: none;
+}
+
+/* Item Box */
+.itemcontainer {
+    display: inline-block;
+}
+
+.itembox {
+    display: inline-block;
+    background-color: #181818;
+    margin: 8px;
+    border-radius: 12px;
+    width: 16em;
+    height: 22em;
+    vertical-align: top;
+}
+.common {
+    box-shadow: #90ee9033 0px 8px 24px;
+}
+.epic {
+    box-shadow: #5e87c933 0px 8px 24px;
+}
+.itembox img {
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+}
+.itembox h2,.itembox p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.itembox p {
+    font-size: 16px;
+}
